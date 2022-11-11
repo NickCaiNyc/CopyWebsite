@@ -1,0 +1,83 @@
+body{
+    background-color: #ffffff;
+  }
+  #navbar header{
+    text-align:center;
+  }
+  #scroll{
+    margin:0;
+    padding:0;
+    width:100%;
+    border:solid 1px;
+    height:250px;
+    overflow:auto;
+  }
+  #scroll li{
+    padding:15px;
+    display:blocked;
+    border:solid 1px;
+    list-style:none;
+    
+  }
+  #scroll a{
+    text-decoration:none;
+    color:gray;
+    font-family:Arial, sans-serif;
+    margin-top:10px;
+  }
+  h1{
+    font-family:Arial;
+  }
+  .text{
+    color: #4d4e53;
+    font-family:'Open Sans', Arial, sans-serif;
+    padding-left:20px;
+    padding-top:5px;
+    padding-right:30px;
+  }
+  #Info ul{
+    padding-left:0;
+    margin-left:50px;
+  }
+  p, li{
+    line-height: 1.5;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  .ex{
+    background-color:#f7f7f7;;
+    border-radius:5px;
+    margin-left:50px;
+    margin-right:50px;
+    padding:15px 15px 15px 15px;
+    color: #4d4e53;
+    font-family: monospace;
+    line-height: 2;
+  }
+  header{
+    font-size:30px;
+    padding-top:15px;
+    font-family:'Open Sans', Arial, sans-serif;
+  }
+  @media only screen and (min-width: 850px) {
+    #navbar header{
+      padding-bottom:9px;
+    }
+    #scroll{
+    overflow:auto;
+    height:100%;
+    }
+    #navbar{
+    float:left;
+    position:fixed;
+    top: 0; 
+    left: 0;
+    width:29%;
+    height:90%;
+    border: 1px bold;
+    }
+    main{
+      width:70%;
+      padding-left:30%;
+    }
+  }

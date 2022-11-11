@@ -1,0 +1,253 @@
+@import url(//db.onlinewebfonts.com/c/5a652d675579c544ff4349931771f9ae?family=the+brooklyn);
+:root {
+  --link-color: black;
+}
+
+body {
+  color: #000;
+  background-color: white;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+.search-fixed {
+  right: 95%;
+  bottom: 50%;
+  position: fixed;
+  width: 40px;
+  -webkit-filter: invert(0.75);
+  filter: invert(0.75);
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 4em 2em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: 'brooklyn';
+  font-size: 3em;
+}
+
+.navbar .logo:hover {
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  padding: 0;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+.description h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 350%;
+  padding: 10%;
+  padding-top: 0%;
+}
+
+.description p {
+  color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.description a {
+  color: lightgray;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav a {
+  font-family: 'Courier New', Courier, monospace;
+  color: lightgray;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav .mobile-menu-exit {
+  cursor: pointer;
+}
+
+.sec1 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  background: black;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 10em;
+}
+
+.sec1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: -4em;
+}
+
+.sec1 .container img {
+  width: 60%;
+}
+
+.sec1 .text {
+  text-transform: uppercase;
+  color: darkgray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 150%;
+}
+
+.sec1 .textdes {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 170%;
+}
+
+.sec1 .left {
+  padding-left: 5em;
+}
+
+.sec1 .left:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sec1 .right {
+  padding-left: 5em;
+}
+
+.sec1 .right:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sect2 {
+  background: black;
+  text-align: center;
+}
+
+.sect2 .text {
+  color: darkgray;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+.sect2 .textdes {
+  color: white;
+  font-size: 170%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sect2 img {
+  width: 50%;
+}
+
+label {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1200px) {
+  input, textarea {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .description h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

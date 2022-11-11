@@ -1,0 +1,207 @@
+@import url(//db.onlinewebfonts.com/c/5a652d675579c544ff4349931771f9ae?family=the+brooklyn);
+
+:root{
+  --link-color: black;
+}
+body {
+  color: #000;
+  background-color: white;
+  transition: background-color 1s ease;
+}
+
+.search-fixed{
+  right:95%;
+  bottom: 50%;
+  position:fixed;
+  width:40px;
+  -webkit-filter: invert(.75);
+  filter: invert(.75);
+  cursor: pointer;
+}
+
+.navbar{
+  padding: 4em 2em;
+  .logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'brooklyn';
+    font-size:3em;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+  ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+  }
+  .container{
+  display: flex;
+  place-content: space-between;
+  }
+  .mobile-menu{
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+nav{
+  display: none;
+}
+.mobile-menu{
+  cursor: pointer;
+}
+
+.description{
+  
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 350%;
+    padding: 10%;
+    padding-top: 0%;
+  }
+  p{
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  a{
+    color: lightgray;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;  
+    text-transform: uppercase;
+    font-size: 150%;
+  }
+
+}
+ul { //all unnumbered lists dont have dots
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 5em 2em;
+}
+
+nav.menu-btn{
+  display:block;
+}
+nav{
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+  a{
+    font-family:'Courier New', Courier, monospace;
+    color: lightgray;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 1.5em;
+    &:hover{
+      font-weight: bold;//when hover on the a links will bold
+    }
+  }
+  .mobile-menu-exit{
+    cursor: pointer;
+  }
+}
+//sec 2
+.sec1{
+  transition: transform 1s;
+  background: black;
+
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 10em;
+  .container{
+    display:flex;
+    justify-content: space-between;
+    border: -4em;
+    img{
+      width:60%;
+    }
+  }
+  .text{
+    text-transform: uppercase;
+    color: darkgray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+  }
+  .textdes{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 170%;
+  }
+  .left{
+    padding-left:5em;
+    &:hover{
+      transform:scale(1.1);
+    }
+  }
+  .right{
+    padding-left: 5em;
+    &:hover{
+      transform:scale(1.1);
+    }
+  }
+}
+.sect2{
+  background: black;
+  text-align: center;
+  .text{
+    color: darkgray;
+    text-transform: uppercase;
+    font-size: 150%;
+  }
+  .textdes{
+    color: white;
+    font-size: 170%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  img{
+    width: 50%;
+  }
+}
+
+label {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1200px){
+  input, textarea {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1450px){
+  .description{
+  
+    h1{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 500%;
+      padding: 0;
+    }
+  }
+}
